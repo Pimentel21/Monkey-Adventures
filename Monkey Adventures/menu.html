@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monkey Adventures - Menu</title>
+        <link rel="stylesheet" href="css.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url('img/fundomenu.png');
+                background-size: 100% 100%;
+                background-position: center;
+                font-family: Arial, sans-serif;
+            }
+
+            #menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            #menu button {
+                margin: 10px;
+                padding: 0; /* Remove o preenchimento para ajustar o tamanho da imagem */
+                width: 200px; /* Largura da imagem do botão */
+                height: 50px; /* Altura da imagem do botão */
+                background-size: contain; /* Ajusta a imagem para cobrir todo o botão */
+                background-repeat: no-repeat; /* Evita repetição da imagem */
+                border: none; /* Remove a borda padrão do botão */
+                cursor: pointer;
+                background-color: transparent;
+            }
+
+            #botaojogar {
+                background-image: url('img/botaojogar.png'); /* Caminho para a imagem do botão play */
+            }
+
+            #botaocomojogar {
+                background-image: url('img/botaocomojogar.png'); /* Caminho para a imagem do botão instructions */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <button id="botaojogar" onclick="window.location.href = 'jogo.html'"></button>
+            <button id="botaocomojogar" onclick="window.location.href = 'comojogar.html'"></button>
+        </div>
+    </body>
+</html>

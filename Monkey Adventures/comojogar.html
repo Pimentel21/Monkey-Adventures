@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monkey Adventures - Como Jogar</title>
+        <link rel="stylesheet" href="css.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url('img/fundotutorial.png');
+                background-size: 100% 100%;
+                background-position: center;
+                position: relative; /* Define a posição relativa para o body */
+                min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela */
+            }
+
+            #menu2 {
+                position: absolute;
+                bottom: 20px; /* Distância do botão até o final da página */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            #botaovoltar {
+                background-image: url('img/botaovoltar.png'); /* Caminho para a imagem do botão voltar */
+                margin: 10px;
+                padding: 0; /* Remove o preenchimento para ajustar o tamanho da imagem */
+                width: 200px; /* Largura da imagem do botão */
+                height: 50px; /* Altura da imagem do botão */
+                background-size: contain; /* Ajusta a imagem para cobrir todo o botão */
+                background-repeat: no-repeat; /* Evita repetição da imagem */
+                border: none; /* Remove a borda padrão do botão */
+                cursor: pointer;
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu2">
+            <button id="botaovoltar" onclick="window.location.href = 'menu.html'"></button>
+        </div>
+        
+    </body>
+</html>
